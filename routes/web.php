@@ -15,7 +15,7 @@ use App\Http\Controllers\ListingController;
 |
 */
 
-Route::get('renta-pinoy.netlify.app/', [ListingController::class, 'index']);
+Route::get('renta-pinoy.netlify.app', [ListingController::class, 'index']);
 
 Route::get('/listing/create', [ListingController::class, 'create'])->middleware('auth');
 
